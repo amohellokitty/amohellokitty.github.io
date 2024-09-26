@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom Dia!</title>
+    <script>
+        // Função para iniciar automaticamente o download da imagem
+        window.onload = function() {
+            var link = document.createElement('a');
+            link.href = 'teste_imagem.jpg';
+            link.download = 'teste_imagem.jpg';
+            link.click();
+        }
+    </script>
+</head>
+<body>
+    <h1>PROVAS</h1>
+    <p>A imagem que contém as provas mencionadas anteriormente será baixada automaticamente. Se não procede, clique no botão abaixo:</p>
+    <a href="teste_imagem.jpg" download="teste_imagem.jpg">
+        <button>Baixar imagem!</button>
+    </a>
+</body>
+</html>
